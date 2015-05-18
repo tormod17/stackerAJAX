@@ -64,7 +64,7 @@ var showAnswerers = function(topAnswerers){
 	Reputation.text(topAnswerers.user.reputation);
 
 	var answerersLink = result.find('.answerersLink a');
-	//answerersLink.attr('href',topAnswerers.link);
+	answerersLink.attr("href" , topAnswerers.user.link);
 	answerersLink.text(topAnswerers.user.link);
 	//answerersLink.text(topAnswerers.user.profile_image);
 
